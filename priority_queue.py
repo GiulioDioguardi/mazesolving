@@ -1,4 +1,3 @@
-
 from abc import ABCMeta, abstractmethod
 import itertools
 
@@ -85,7 +84,6 @@ class HeapPQ(PriorityQueue):
         node.key = new_priority
         self.insert(node)
 
-
 class QueuePQ(PriorityQueue):
     def __init__(self):
         self.pq = queue.PriorityQueue()
@@ -127,4 +125,3 @@ class QueuePQ(PriorityQueue):
         self.remove(node)
         node.key = new_priority
         self.insert(node)
-

@@ -89,7 +89,6 @@ def solve(maze):
                             distances[vposindex] = newdistance
                             prev[vposindex] = u
 
-
         visited[uposindex] = True
 
     from collections import deque

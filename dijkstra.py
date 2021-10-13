@@ -94,7 +94,6 @@ def solve(maze):
 
         visited[uposindex] = True
 
-
     # We want to reconstruct the path. We start at end, and then go prev[end] and follow all the prev[] links until we're back at the start
     from collections import deque
 
