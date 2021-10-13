@@ -7,9 +7,9 @@ from solve import solve
 from factory import SolverFactory
 
 methods = [
-    "astar",
-    # "breadthfirst",
-    # "depthfirst",
+    # "astar",
+    "breadthfirst",
+    "depthfirst",
     "dijkstra",
     # "leftturn",
 ]
@@ -32,7 +32,7 @@ def profile():
     for m in methods:
         for i in inputs:
             with tempfile.NamedTemporaryFile(suffix='.png') as tmp:
-                solve(SolverFactory(), m, "examples/%s.png" % i, tmp.name)
+                solve(SolverFactory(), m, "examples/%s.png" % i, tmp)
 
 profiler = BProfile('profiler.png')
 with profiler:
